@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		930780A4296F3FA9003E131F /* SPW.png in Resources */ = {isa = PBXBuildFile; fileRef = 930780A3296F3FA9003E131F /* SPW.png */; };
 		93181B31296B24B40030A05C /* SwiftUI_PropertyWrapperTestApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93181B30296B24B40030A05C /* SwiftUI_PropertyWrapperTestApp.swift */; };
 		93181B33296B24B40030A05C /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93181B32296B24B40030A05C /* ContentView.swift */; };
 		93181B35296B24B60030A05C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 93181B34296B24B60030A05C /* Assets.xcassets */; };
@@ -34,6 +35,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		930780A3296F3FA9003E131F /* SPW.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = SPW.png; sourceTree = "<group>"; };
 		93181B2D296B24B40030A05C /* SwiftUI-PropertyWrapperTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "SwiftUI-PropertyWrapperTest.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		93181B30296B24B40030A05C /* SwiftUI_PropertyWrapperTestApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUI_PropertyWrapperTestApp.swift; sourceTree = "<group>"; };
 		93181B32296B24B40030A05C /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -73,9 +75,18 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		930780A0296F3F29003E131F /* GitHub-Images */ = {
+			isa = PBXGroup;
+			children = (
+				930780A3296F3FA9003E131F /* SPW.png */,
+			);
+			path = "GitHub-Images";
+			sourceTree = "<group>";
+		};
 		93181B24296B24B40030A05C = {
 			isa = PBXGroup;
 			children = (
+				930780A0296F3F29003E131F /* GitHub-Images */,
 				93181B2F296B24B40030A05C /* SwiftUI-PropertyWrapperTest */,
 				93181B2E296B24B40030A05C /* Products */,
 			);
@@ -195,6 +206,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				930780A4296F3FA9003E131F /* SPW.png in Resources */,
 				93181B38296B24B60030A05C /* Preview Assets.xcassets in Resources */,
 				93181B35296B24B60030A05C /* Assets.xcassets in Resources */,
 			);
