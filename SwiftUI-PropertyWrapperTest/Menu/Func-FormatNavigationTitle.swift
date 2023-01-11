@@ -8,16 +8,16 @@
 import SwiftUI
 
 
-func formatNavTitle(_ largeTitleFontSize: CGFloat, _ titleFontSize: CGFloat) {
+func formatNavTitle(_ fontSize: CGFloat, _ largeFontSize: CGFloat) {
 	let appearance = UINavigationBarAppearance()
 	
 	appearance.largeTitleTextAttributes = [
-		.font : UIFont.systemFont(ofSize: largeTitleFontSize),
+		.font : UIFont.systemFont(ofSize: largeFontSize),
 		NSAttributedString.Key.foregroundColor : UIColor.label
 	]
 	
 	appearance.titleTextAttributes = [
-		.font : UIFont.systemFont(ofSize: titleFontSize),
+		.font : UIFont.systemFont(ofSize: fontSize),
 		NSAttributedString.Key.foregroundColor : UIColor.label
 	]
 	

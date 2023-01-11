@@ -10,9 +10,9 @@ import SwiftUI
 
 struct MenuView: View {
 	
-	/// Format the navigation title
-//	init() { formatNavTitle(30, 20) }
-	
+	/// Setting Navigation Title
+	init() { formatNavTitle(20, 30) }
+
 	@State private var wrapperChoices: [WrapperChoice] = [
 		WrapperChoice(description: "@State", 															value: .state),
 		WrapperChoice(description: "@State, @Binding", 				  					value: .stateBinding),
@@ -46,13 +46,6 @@ struct MenuView: View {
 			.navigationTitle(Text("SwiftUI Property Wrappers"))
 		}
 	}
-}
-
-
-struct WrapperChoice: Identifiable {
-	var id					: UUID = UUID()
-	let description : String
-	let value       : Wrapper
 }
 
 
@@ -104,4 +97,10 @@ enum Wrapper {
 	case focusBinding
 	case focusValue
 	case uiApplicationDelegateAdaptor
+}
+
+struct WrapperChoice: Identifiable {
+	var id					: UUID = UUID()
+	let description : String
+	let value       : Wrapper
 }
