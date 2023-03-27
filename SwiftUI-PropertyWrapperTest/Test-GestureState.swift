@@ -10,8 +10,8 @@ import SwiftUI
 
 struct TestGestureStateView: View {
 	
-	@GestureState private var dragOffset = CGSize.zero
-	@GestureState private var dragAmount = CGSize.zero
+	@GestureState private var dragStar = CGSize.zero
+	@GestureState private var dragCircles = CGSize.zero
 	
 	var body: some View {
 		VStack {
@@ -20,30 +20,41 @@ struct TestGestureStateView: View {
 			
 			Spacer()
 			
-			Image(systemName: "star.fill")
-				.font(.system(size: 100))
-				.offset(dragAmount)
-				.foregroundColor(.teal)
-				.animation(.easeInOut, value: dragAmount)
-				.gesture(
-					DragGesture().updating($dragAmount) { value, state, transaction in
-						state = value.translation
-					}
-				)
+			ZStack {
+				Image(systemName: "star")
+					.font(.system(size: 100))
+					.foregroundColor(.teal)
+				
+				Image(systemName: "star.fill")
+					.font(.system(size: 100))
+					.offset(dragStar)
+					.foregroundColor(.teal)
+					.animation(.easeInOut, value: dragStar)
+					.gesture(
+						DragGesture().updating($dragStar) { value, state, transaction in
+							state = value.translation
+						}
+					)
+			}
 			
 			Spacer()
 			
-			Image(systemName: "circle.hexagonpath.fill")
-				.font(.system(size: 100))
-				.offset(x: dragOffset.width, y: dragOffset.height)
-				.animation(.easeInOut, value: dragOffset)
-				.foregroundColor(.pink)
-				.gesture(
-					DragGesture()
-						.updating($dragOffset, body: { (value, state, transaction) in
-							state = value.translation
-						})
-				)
+			ZStack {
+				Image(systemName: "circle.hexagonpath")
+					.font(.system(size: 100))
+					.foregroundColor(.pink)
+				
+				Image(systemName: "circle.hexagonpath.fill")
+					.font(.system(size: 100))
+					.offset(dragCircles)
+					.animation(.easeInOut, value: dragCircles)
+					.foregroundColor(.pink)
+					.gesture(
+						DragGesture().updating($dragCircles, body: { (value, state, transaction) in
+								state = value.translation
+							})
+					)
+			}
 			
 			Spacer()
 			

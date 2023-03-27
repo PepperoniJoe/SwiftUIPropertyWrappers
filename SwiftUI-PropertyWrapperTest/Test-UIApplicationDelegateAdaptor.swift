@@ -14,10 +14,12 @@ import SwiftUI
 	///1. Add AppDelegate class with needed functions
 	///2. Add the property wrapper to top of view hierarchy
 	///3. Display the app delegate messages
-	///
+///
+/// UIApplicationDelegateAdaptor places our delegate instance into the environment
+/// 
 struct TestUIDelegateView: View {
 	
-	@EnvironmentObject var appDelegate: AppDelegate 
+	@EnvironmentObject private var delegate: AppDelegate
 
 	var body: some View {
 		VStack {
@@ -26,7 +28,7 @@ struct TestUIDelegateView: View {
 			
 			Spacer()
 			
-			Text("Messages: \(appDelegate.message)")
+			Text("Messages: \(delegate.message)")
 			
 			Spacer()
 			
@@ -39,6 +41,8 @@ struct TestUIDelegateView: View {
 
 
 	/// For use with UIApplicationDelegateAdaptor
+	/// The ObservableObject makes the object observable to SwiftUI.
+	/// @Published makes the property accessible to observers and publishes when a change is made
 class AppDelegate: NSObject, UIApplicationDelegate, ObservableObject {
 	
 	@Published var message: String = ""
@@ -59,5 +63,9 @@ class AppDelegate: NSObject, UIApplicationDelegate, ObservableObject {
 	
 	func applicationDidEnterBackground(_ application: UIApplication) {
 		message = "App did enter background"
+	}
+	
+	func applicationWillTerminate(_ application: UIApplication) {
+		message = "App will terminate"
 	}
 }

@@ -26,6 +26,7 @@ struct MenuView: View {
 		WrapperChoice(description: "@FetchRequest", 											value: .fetchRequest),
 		WrapperChoice(description: "@SceneStorage", 											value: .sceneStorage),
 		WrapperChoice(description: "@Environment", 											  value: .environment),
+		WrapperChoice(description: "@Environment - All Values", 					value: .environment2),
 		WrapperChoice(description: "@ScaledMetric", 											value: .scaledMetric),
 		WrapperChoice(description: "@GestureState", 											value: .gestureState),
 		WrapperChoice(description: "@Namespace", 											    value: .namespace),
@@ -67,6 +68,7 @@ struct MenuDestination: View {
 			case .fetchRequest						 		 : TestFetchRequestView()
 			case .sceneStorage						 		 : TestSceneStorageView()
 			case .environment							 		 : TestEnvironmentView()
+			case .environment2							 	 : TestEnvironmentSeveralView()
 			case .scaledMetric								 : TestScaledMetricView()
 			case .gestureState						 		 : TestGestureStateView()
 			case .namespace						 		 		 : TestNamespaceView()
@@ -91,6 +93,7 @@ enum Wrapper {
 	case fetchRequest
 	case sceneStorage
 	case environment
+	case environment2
 	case scaledMetric
 	case gestureState
 	case namespace

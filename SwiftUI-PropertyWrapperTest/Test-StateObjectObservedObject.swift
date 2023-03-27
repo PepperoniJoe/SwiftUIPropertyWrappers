@@ -7,6 +7,12 @@
 
 
 import SwiftUI
+/*
+ 1 Observable Object defines the object instance's layout
+ 2 @StateObject declarea the instance at the needed location
+ 3 @ObservedObject observes the StateObject created.
+ 
+ */
 
 class User: ObservableObject {
 	@Published var name    : String = "Major Biden"
@@ -15,6 +21,7 @@ class User: ObservableObject {
 	@Published var state   : String = "D.C."
 	@Published var zip     : String = "20500"
 }
+
 
 
 	/// Main view for this section

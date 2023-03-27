@@ -54,5 +54,4 @@ struct TestStateBinding2View: View {
 			}
 		}
 	}
-	
 }

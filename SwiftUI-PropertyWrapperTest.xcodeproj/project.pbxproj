@@ -23,6 +23,7 @@
 		931CF9F0296E898C004D8D21 /* Menu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 931CF9EF296E898C004D8D21 /* Menu.swift */; };
 		931CF9F3296E8C56004D8D21 /* Func-FormatNavigationTitle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 931CF9F2296E8C56004D8D21 /* Func-FormatNavigationTitle.swift */; };
 		9351EDA1296CF69700F2A90D /* Test-StateObjectObservedObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9351EDA0296CF69700F2A90D /* Test-StateObjectObservedObject.swift */; };
+		93BA811C297B0D5A00A12E2D /* Test-Environment-Description.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93BA811B297B0D5A00A12E2D /* Test-Environment-Description.swift */; };
 		93F3FE38296BDE04000AACCD /* Test-FetchRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93F3FE37296BDE04000AACCD /* Test-FetchRequest.swift */; };
 		93F3FE3A296BE098000AACCD /* Test-SceneStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93F3FE39296BE098000AACCD /* Test-SceneStorage.swift */; };
 		93F3FE3C296BE268000AACCD /* Test-Environment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93F3FE3B296BE268000AACCD /* Test-Environment.swift */; };
@@ -53,6 +54,7 @@
 		931CF9EF296E898C004D8D21 /* Menu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Menu.swift; sourceTree = "<group>"; };
 		931CF9F2296E8C56004D8D21 /* Func-FormatNavigationTitle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Func-FormatNavigationTitle.swift"; sourceTree = "<group>"; };
 		9351EDA0296CF69700F2A90D /* Test-StateObjectObservedObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Test-StateObjectObservedObject.swift"; sourceTree = "<group>"; };
+		93BA811B297B0D5A00A12E2D /* Test-Environment-Description.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Test-Environment-Description.swift"; sourceTree = "<group>"; };
 		93F3FE37296BDE04000AACCD /* Test-FetchRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Test-FetchRequest.swift"; sourceTree = "<group>"; };
 		93F3FE39296BE098000AACCD /* Test-SceneStorage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Test-SceneStorage.swift"; sourceTree = "<group>"; };
 		93F3FE3B296BE268000AACCD /* Test-Environment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Test-Environment.swift"; sourceTree = "<group>"; };
@@ -118,6 +120,7 @@
 				93F3FE37296BDE04000AACCD /* Test-FetchRequest.swift */,
 				93F3FE39296BE098000AACCD /* Test-SceneStorage.swift */,
 				93F3FE3B296BE268000AACCD /* Test-Environment.swift */,
+				93BA811B297B0D5A00A12E2D /* Test-Environment-Description.swift */,
 				93181B4C296BB8310030A05C /* Test-StateObject.swift */,
 				93F3FE3D296BE806000AACCD /* Test-ScaledMetric.swift */,
 				93F3FE3F296BF00A000AACCD /* Test-GestureState.swift */,
@@ -236,6 +239,7 @@
 				93F3FE48296BFBA3000AACCD /* Test-FocusBinding.swift in Sources */,
 				93181B45296B290C0030A05C /* Test-StateBindingMultiLevel.swift in Sources */,
 				93181B31296B24B40030A05C /* SwiftUI_PropertyWrapperTestApp.swift in Sources */,
+				93BA811C297B0D5A00A12E2D /* Test-Environment-Description.swift in Sources */,
 				93181B43296B28740030A05C /* Test-BasicObservableObject.swift in Sources */,
 				9351EDA1296CF69700F2A90D /* Test-StateObjectObservedObject.swift in Sources */,
 				93181B41296B27430030A05C /* Test-BasicStateBinding.swift in Sources */,

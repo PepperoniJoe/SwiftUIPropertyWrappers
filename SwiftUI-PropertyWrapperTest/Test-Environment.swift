@@ -10,7 +10,7 @@ import SwiftUI
 
 struct TestEnvironmentView: View {
 	@Environment(\.colorScheme) var colorScheme
-	
+
 	var body: some View {
 		VStack {
 			Text("@Environment").font(.title)
